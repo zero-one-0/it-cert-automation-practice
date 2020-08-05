@@ -18,8 +18,8 @@ def validate_user(username, minlen):
     # Usernames can't begin with a number
     if username[0].isnumeric():
         return False
-    p = '._'
-    if username[0] in p:
+    push = '._'
+    if username[0] in push:
         return False 
     return True
 
